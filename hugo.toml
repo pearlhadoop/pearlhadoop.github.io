@@ -1,0 +1,20 @@
+baseURL = "https://pearlhadoop.github.io/"
+locale = "en-us"
+title = "pearlhadoop"
+
+[params]
+  description = "Notes on software engineering."
+  author = "Yunhao"
+
+[markup.highlight]
+  noClasses = false
+  style = "github"
+
+[markup.goldmark.renderer]
+  unsafe = true
+
+[outputs]
+  home = ["HTML", "RSS"]
+
+[permalinks]
+  posts = "/:year/:month/:slug/"

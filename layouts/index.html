@@ -1,0 +1,4 @@
+{{ define "main" }}
+<h2>Recent posts</h2>
+{{ partial "post-list.html" (first 10 (where site.RegularPages "Section" "posts")) }}
+{{ end }}
